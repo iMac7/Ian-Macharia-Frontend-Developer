@@ -11,6 +11,8 @@ function App() {
   const [capsules, setCapsules] = useState({})
   const [modalData, setModalData] = useState({})
   const [page, setPage] = useState(1)
+  const [type, setType] = useState('')
+  const [status, setStatus] = useState('')
 
   function toggleModal(capsule) {
     console.log(capsule)
@@ -32,19 +34,17 @@ function App() {
     }
   }
 
-
   useEffect(() => {
-    fetch(`http://localhost/spacex/index.php?limit=12&page=${page}&search=&fields[]=status&fields[]=type'`)
+    fetch(`http://localhost/spacex/index.php?limit=12&page=${page}&type=${type}&status=${status}`)
     .then(res => res.json())
     .then(data => setCapsules(data))
     .catch(error => console.error(error))
-  }, [page])
+  }, [page, type, status])
   
 
   return (
     <div className='app'> 
-    {/* {console.log('capsules- ', capsules)} */}
-      <Top />
+      <Top type={type} setType={setType} status={status} setStatus={setStatus} />
       <Grid data={capsules?.docs} toggleModal={toggleModal}/>
       <Bottom page={capsules.page} totalPages={capsules.totalPages} setPage={handlePage} />
       {modalOpen? <Modal data={modalData} toggleModal={toggleModal} />: null}

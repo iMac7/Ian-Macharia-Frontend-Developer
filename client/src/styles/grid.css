@@ -2,7 +2,8 @@
     border: 1px solid red;
     display: grid;
     justify-items: center;
-    /* gap: 2rem; */
+    align-items: center;
+    gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     background: rgba(255, 255, 255, .9);
     height: 63vh;
@@ -10,8 +11,8 @@
 }
 
 .capsule {
-    margin: 1rem;
-    /* width: 20vw; */
+    width: 20vw;
+    height: 20vh;
     min-width: 300px;
     border: 1px solid black;
     display: flex;
