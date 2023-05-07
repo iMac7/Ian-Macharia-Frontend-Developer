@@ -1,0 +1,12 @@
+.bottom {
+    border: 2px solid black;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    background-color: black;
+}
+
+.bottom button {
+    width: 3rem;
+    height: 3rem;
+}
