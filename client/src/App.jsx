@@ -19,7 +19,10 @@ function App() {
   }
 
   function handlePage(direction) {
-    if(direction==='prev') {
+    if(typeof direction === 'number' && direction !== page) {
+      setPage(direction)
+    }
+    else if(direction==='prev') {
       if(page===1) return
       else setPage(page-1)
     }

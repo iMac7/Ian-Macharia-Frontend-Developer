@@ -7,8 +7,6 @@
     background: rgba(255, 255, 255, .9);
     height: 63vh;
     overflow: auto;
-
-    /* grid-auto-flow: dense; */
 }
 
 .capsule {

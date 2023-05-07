@@ -9,4 +9,9 @@
 .bottom button {
     width: 3rem;
     height: 3rem;
+    transition: 1000ms;
+}
+
+.active {
+    background-color: red;
 }
