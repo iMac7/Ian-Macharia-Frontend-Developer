@@ -12,7 +12,7 @@
 
 .banner h1 {
     background: url(/images/capsule.webp);
-    font-size: 5rem;
+    font-size: max(5rem, 10vw);
     background-clip: text;
     -webkit-background-clip: text;
     background-size: cover;
@@ -25,4 +25,5 @@
 .banner p {
     font-family: 'Anton', sans-serif;
     color: white;
+    font-size: 2rem;
 }
