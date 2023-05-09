@@ -1,6 +1,6 @@
 import '../styles/search.css'
 
-function Top({type, setType, status, setStatus}) {
+function Search({type, setType, status, setStatus}) {
   return (
     <>
     <div className='search'>
@@ -11,4 +11,4 @@ function Top({type, setType, status, setStatus}) {
   )
 }
 
-export default Top
+export default Search

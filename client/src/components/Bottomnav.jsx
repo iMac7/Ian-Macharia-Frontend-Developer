@@ -1,6 +1,6 @@
 import '../styles/bottomnav.css'
 
-function Bottom({page, totalPages, setPage}) {
+function Bottomnav({page, totalPages, setPage}) {
   const btns = []
   for (let i = 0; i < totalPages; i++) {
     btns[i] = <button className={(i+1)===page? 'active': ''} onClick={() => setPage(i+1)} key={i}>{i+1}</button>
@@ -15,4 +15,4 @@ function Bottom({page, totalPages, setPage}) {
   )
 }
 
-export default Bottom
+export default Bottomnav
