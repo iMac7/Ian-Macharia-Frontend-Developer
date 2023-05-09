@@ -33,6 +33,7 @@ caption, td {
 caption {
     font-weight: bold;
     font-size: 2rem;
+    background: black;
 }
 
 tr:nth-child(even) {
