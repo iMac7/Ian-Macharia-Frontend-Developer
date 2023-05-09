@@ -35,10 +35,14 @@ function App() {
   }
 
   useEffect(() => {
-    fetch(`http://localhost/spacex/server.php?limit=12&page=${page}&type=${type}&status=${status}`)
-    .then(res => res.json())
-    .then(data => setCapsules(data))
-    .catch(error => console.error(error))
+    const timeout = setTimeout(() => {
+      fetch(`http://localhost/spacex/server.php?limit=12&page=${page}&type=${type}&status=${status}`)
+      .then(res => res.json())
+      .then(data => setCapsules(data))
+      .catch(error => console.error(error))
+    }, 1000);
+
+    return(() => clearTimeout(timeout))
   }, [page, type, status])
   
 
