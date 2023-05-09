@@ -1,9 +1,9 @@
-import '../styles/modal.css'
+import styles from '../styles/modal.module.css'
 
 function Modal({data = {}, toggleModal}) {
   return (
-    <div className='modal' data-testid='modal' onClick={toggleModal}> 
-        <div className="details" onClick={(e) => e.stopPropagation() }>
+    <div className={styles.modal} data-testid='modal' onClick={toggleModal}> 
+        <div className={styles.details} onClick={(e) => e.stopPropagation() }>
             <table>
               <caption>DETAILS</caption>
               <tbody>

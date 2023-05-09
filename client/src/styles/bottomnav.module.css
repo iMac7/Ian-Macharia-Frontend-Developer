@@ -21,14 +21,6 @@
     outline: 1px solid white;
 }
 
-.prev {
-
-}
-
-.next {
-
-}
-
 .active::after {
     content: '';
     width: 1rem;

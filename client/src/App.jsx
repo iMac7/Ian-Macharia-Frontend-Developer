@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import './App.css'
+import styles from './App.module.css'
 import Bottomnav from './components/Bottomnav'
 import Grid from './components/Grid'
 import Modal from './components/Modal'
@@ -16,7 +16,6 @@ function App() {
   const [status, setStatus] = useState('')
 
   function toggleModal(capsule) {
-    console.log(capsule)
     setModalData(capsule)
     setModalOpen(!modalOpen)
   }
@@ -44,7 +43,7 @@ function App() {
   
 
   return (
-    <div className='app'>
+    <div className={styles.app}>
       <Banner />
       <Search type={type} setType={setType} status={status} setStatus={setStatus} />
       <Grid data={capsules?.docs} toggleModal={toggleModal}/>
