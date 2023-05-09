@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import Bottom from './components/Bottom'
+import Bottomnav from './components/Bottomnav'
 import Grid from './components/Grid'
 import Modal from './components/Modal'
 import Search from './components/Search'
@@ -48,7 +48,7 @@ function App() {
       <Banner />
       <Search type={type} setType={setType} status={status} setStatus={setStatus} />
       <Grid data={capsules?.docs} toggleModal={toggleModal}/>
-      <Bottom page={capsules.page} totalPages={capsules.totalPages} setPage={handlePage} />
+      <Bottomnav page={capsules.page} totalPages={capsules.totalPages} setPage={handlePage} />
       {modalOpen? <Modal data={modalData} toggleModal={toggleModal} />: null}
     </div>
   )

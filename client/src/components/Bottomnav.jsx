@@ -1,4 +1,4 @@
-import '../styles/bottom.css'
+import '../styles/bottomnav.css'
 
 function Bottom({page, totalPages, setPage}) {
   const btns = []
@@ -7,7 +7,7 @@ function Bottom({page, totalPages, setPage}) {
   }
 
   return (
-    <div className='bottom'>
+    <div className='bottomnav'>
       <button className="prev" onClick={() => setPage('prev')} disabled={page==1}>prev</button>
       {btns.map(btn => btn)}
       <button className="next" onClick={() => setPage('next')} disabled={page==totalPages}>next</button>

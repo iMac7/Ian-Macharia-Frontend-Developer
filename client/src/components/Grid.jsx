@@ -6,10 +6,10 @@ function Grid({data, toggleModal}) {
     <>
         <div className='grid' >
             {data?.map(capsule => 
-                <div className='capsule' onClick={() => toggleModal(capsule)} key={capsule.id} tabIndex={0}>
-                    <p>{capsule.type}</p>
-                    <p>{capsule.status}</p>
-                </div>    
+              <div className='capsule' onClick={() => toggleModal(capsule)} key={capsule.id} tabIndex={0}>
+                  <p>{capsule.type}</p>
+                  <p>{capsule.status}</p>
+              </div>
             )}
         </div>
     </>

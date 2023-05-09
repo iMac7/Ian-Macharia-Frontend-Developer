@@ -1,4 +1,4 @@
-.bottom {
+.bottomnav {
     border: 2px solid black;
     display: flex;
     gap: 1rem;
@@ -6,7 +6,7 @@
     background-color: black;
 }
 
-.bottom button {
+.bottomnav button {
     width: 3rem;
     height: 3rem;
     border: none;
@@ -17,7 +17,7 @@
     font-size: 1.2rem;
 }
 
-.bottom button:active {
+.bottomnav button:active {
     outline: 1px solid white;
 }
 
