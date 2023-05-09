@@ -8,9 +8,9 @@ function Bottom({page, totalPages, setPage}) {
 
   return (
     <div className='bottom'>
-      <button className="prev" onClick={() => setPage('prev')}>prev</button>
+      <button className="prev" onClick={() => setPage('prev')} disabled={page==1}>prev</button>
       {btns.map(btn => btn)}
-      <button className="next" onClick={() => setPage('next')}>next</button>
+      <button className="next" onClick={() => setPage('next')} disabled={page==totalPages}>next</button>
     </div>
   )
 }

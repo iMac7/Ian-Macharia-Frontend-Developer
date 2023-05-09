@@ -1,0 +1,32 @@
+  @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+  /* font-family: 'Anton', sans-serif; */
+
+
+.banner {
+    height: 95vh;
+    background: url(/images/rocket_launch.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1 {
+    background: url(/images/capsule.webp);
+    font-size: 5rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    color: transparent;
+    font-family: 'Anton', sans-serif;
+}
+
+.banner p {
+    font-family: 'Anton', sans-serif;
+    color: white;
+}

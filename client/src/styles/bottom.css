@@ -9,9 +9,33 @@
 .bottom button {
     width: 3rem;
     height: 3rem;
+    border: none;
+    background: none;
     transition: 1000ms;
+    color: white;
+    position: relative;
+    font-size: 1.2rem;
 }
 
-.active {
-    background-color: red;
+.bottom button:active {
+    outline: 1px solid white;
+}
+
+.prev {
+
+}
+
+.next {
+
+}
+
+.active::after {
+    content: '';
+    width: 1rem;
+    height: .1rem;
+    position: absolute;
+    background-color: white;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
 }

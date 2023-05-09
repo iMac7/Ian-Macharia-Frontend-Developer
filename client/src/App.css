@@ -1,21 +1,37 @@
- * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- }
+}
 
- .app {
-    width: 100vw;
-    height: 100vh;
-    background: url(/images/capsule.webp);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 2rem 0;
- }
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
 
- button:hover {
-    cursor: pointer;
- }
+.app {
+  width: 100vw;
+  height: fit-content;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.app::-webkit-scrollbar {
+  display: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:disabled {
+   cursor: not-allowed;
+}

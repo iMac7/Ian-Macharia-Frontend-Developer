@@ -4,6 +4,7 @@ import Bottom from './components/Bottom'
 import Grid from './components/Grid'
 import Modal from './components/Modal'
 import Search from './components/Search'
+import Banner from './components/Banner'
 
 function App() {
 
@@ -43,7 +44,8 @@ function App() {
   
 
   return (
-    <div className='app'> 
+    <div className='app'>
+      <Banner />
       <Search type={type} setType={setType} status={status} setStatus={setStatus} />
       <Grid data={capsules?.docs} toggleModal={toggleModal}/>
       <Bottom page={capsules.page} totalPages={capsules.totalPages} setPage={handlePage} />

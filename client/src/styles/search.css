@@ -1,0 +1,38 @@
+.top {
+    background: rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+}
+
+.top * {
+    margin: .5rem;
+}
+
+.top input {
+    border: 1px solid gray;
+    outline: none;
+    max-width: 300px;
+    min-width: 80px;
+    padding: .5rem;
+    font-size: 1rem;
+    background: black;
+    transition: 300ms;
+}
+
+.top input:focus {
+    background-color: white;
+}
+
+.top button {
+    border: none;
+    background: rgb(255, 255, 255);
+    border-radius: 1rem;
+    transition: 300ms;
+}
+
+.top button:active {
+    background-color: black;
+}
