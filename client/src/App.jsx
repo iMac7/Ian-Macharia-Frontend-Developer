@@ -3,7 +3,7 @@ import './App.css'
 import Bottom from './components/Bottom'
 import Grid from './components/Grid'
 import Modal from './components/Modal'
-import Top from './components/Top'
+import Search from './components/Search'
 
 function App() {
 
@@ -44,7 +44,7 @@ function App() {
 
   return (
     <div className='app'> 
-      <Top type={type} setType={setType} status={status} setStatus={setStatus} />
+      <Search type={type} setType={setType} status={status} setStatus={setStatus} />
       <Grid data={capsules?.docs} toggleModal={toggleModal}/>
       <Bottom page={capsules.page} totalPages={capsules.totalPages} setPage={handlePage} />
       {modalOpen? <Modal data={modalData} toggleModal={toggleModal} />: null}

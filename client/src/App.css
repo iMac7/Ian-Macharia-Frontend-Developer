@@ -7,7 +7,7 @@
  .app {
     width: 100vw;
     height: 100vh;
-    background: url(/public/images/capsule.webp);
+    background: url(/images/capsule.webp);
     background-size: cover;
     background-position: center;
     display: flex;
