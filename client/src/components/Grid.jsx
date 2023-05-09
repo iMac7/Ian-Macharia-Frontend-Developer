@@ -8,7 +8,7 @@ function Grid({data, toggleModal}) {
             {data?.map(capsule => 
                 <div className='capsule' onClick={() => toggleModal(capsule)} key={capsule.id} tabIndex={0}>
                     <p>{capsule.type}</p>
-                    <p>{capsule.serial}</p>
+                    <p>{capsule.status}</p>
                 </div>    
             )}
         </div>

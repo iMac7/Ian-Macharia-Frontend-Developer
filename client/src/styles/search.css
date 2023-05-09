@@ -1,5 +1,5 @@
-.top {
-    background: rgba(0, 0, 0, 1);
+.search {
+    background: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,11 +7,11 @@
 
 }
 
-.top * {
+.search * {
     margin: .5rem;
 }
 
-.top input {
+.search input {
     border: 1px solid gray;
     outline: none;
     max-width: 300px;
@@ -19,20 +19,11 @@
     padding: .5rem;
     font-size: 1rem;
     background: black;
+    color: rgb(156, 156, 156);
     transition: 300ms;
 }
 
-.top input:focus {
+.search input:focus {
     background-color: white;
-}
-
-.top button {
-    border: none;
-    background: rgb(255, 255, 255);
-    border-radius: 1rem;
-    transition: 300ms;
-}
-
-.top button:active {
-    background-color: black;
+    color: black;
 }
